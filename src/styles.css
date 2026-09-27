@@ -1,0 +1,41 @@
+:root {
+  font-family: -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  padding: 4px 10px;
+  cursor: pointer;
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 3px;
+}
+
+button:hover:not(:disabled) {
+  background: #f0f0ea;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+h4 {
+  font-size: 13px;
+}

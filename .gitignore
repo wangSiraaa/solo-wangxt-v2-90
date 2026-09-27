@@ -1,5 +1,3 @@
-
-
 # SOLO initial credential and cache exclusions
 .env
 .env.*
@@ -23,3 +21,8 @@ venv/
 __pycache__/
 .pytest_cache/
 .DS_Store
+
+# build output & playwright
+dist/
+test-results/
+playwright-report/
