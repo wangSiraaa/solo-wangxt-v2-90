@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+.app { max-width: 1280px; margin: 0 auto; padding: 12px 16px 40px; }
+header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+header h1 { font-size: 18px; margin: 8px 0; }
+.badge {
+  background: #e8f0fe; color: #1a56db; border-radius: 10px;
+  padding: 2px 10px; font-size: 12px;
+}
+.columns { display: grid; grid-template-columns: 420px 1fr; gap: 16px; align-items: start; }
+section { background: #fff; border: 1px solid #e3e5e8; border-radius: 8px; padding: 12px 14px; }
+h2 { font-size: 15px; margin: 4px 0 10px; }
+h3 { font-size: 13px; margin: 10px 0 6px; }
+label { display: block; font-size: 13px; margin: 8px 0; }
+label.inline { display: flex; align-items: center; gap: 6px; }
+input[type="text"], input:not([type]), textarea, select {
+  width: 100%; margin-top: 3px; padding: 6px 8px;
+  border: 1px solid #cbd2d9; border-radius: 6px; font-size: 13px; font-family: inherit;
+}
+input[type="number"] { width: 90px; margin-top: 3px; padding: 6px 8px; border: 1px solid #cbd2d9; border-radius: 6px; }
+textarea { resize: vertical; }
+fieldset { border: 1px solid #e3e5e8; border-radius: 8px; margin: 12px 0; padding: 8px 10px; }
+legend { font-size: 13px; color: #555; padding: 0 6px; }
+button {
+  padding: 6px 14px; border: 1px solid #1a56db; background: #1a56db; color: #fff;
+  border-radius: 6px; font-size: 13px; cursor: pointer;
+}
+button:disabled { background: #9db4e8; border-color: #9db4e8; cursor: not-allowed; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.row label { display: flex; align-items: center; gap: 4px; margin: 0; }
+.hint { font-size: 12px; color: #777; margin: 6px 0; }
+.error { background: #fde8e8; border: 1px solid #f8b4b4; color: #9b1c1c; border-radius: 8px; padding: 8px 10px; margin: 10px 0; font-size: 13px; }
+.warning { background: #fdf6e3; border: 1px solid #f5d98b; color: #8a6d1a; border-radius: 8px; padding: 8px 10px; margin: 10px 0; font-size: 13px; }
+.error ul, .warning ul { margin: 6px 0 0; padding-left: 18px; }
+.diagram-canvas { border: 1px solid #ddd; border-radius: 6px; cursor: crosshair; background: #fff; margin-top: 6px; }
+.caption-label { margin-top: 8px; }
+.page-canvas { border: 1px solid #ddd; border-radius: 4px; background: #fff; display: block; margin-top: 8px; }
+.preview .row span { font-size: 13px; color: #444; }
+.mapping-panel { margin-top: 12px; }
+.mapping-list { max-height: 260px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+.mapping-item {
+  display: flex; gap: 8px; align-items: baseline; text-align: left;
+  background: #f8f9fb; border: 1px solid #e3e5e8; color: #222; padding: 5px 8px; border-radius: 6px;
+}
+.mapping-item.selected { background: #fff3e0; border-color: #ff8c00; }
+.mapping-item .src { font-weight: 600; min-width: 90px; word-break: break-all; }
+.mapping-item .arrow { color: #999; }
+.mapping-item .brl { font-size: 16px; letter-spacing: 2px; }
+.mapping-item .meta { margin-left: auto; font-size: 11px; color: #888; white-space: nowrap; }
